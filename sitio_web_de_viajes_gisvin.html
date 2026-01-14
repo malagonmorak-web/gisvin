@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gisvin | Agencia de Viajes</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1d2671, #c33764);
+      color: #ffffff;
+    }
+
+    header {
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3.5em;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    header p {
+      font-size: 1.3em;
+      margin-top: 15px;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 30px 20px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card i {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      color: #ffd54f;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 15px 35px;
+      font-size: 1.1em;
+      border-radius: 40px;
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(135deg, #ff9800, #ff5722);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    .social {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .social a {
+      margin: 0 15px;
+      font-size: 2em;
+      color: #ffffff;
+      transition: color 0.3s;
+    }
+
+    .social a:hover {
+      color: #ffd54f;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 25px;
+      text-align: center;
+      background-color: rgba(0,0,0,0.25);
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gisvin</h1>
+    <p>Agencia de viajes | Experiencias únicas alrededor del mundo ✈️🌍</p>
+  </header>
+
+  <div class="container">
+    <h2>¿Por qué viajar con nosotros?</h2>
+
+    <div class="cards">
+      <div class="card">
+        <i class="fas fa-plane"></i>
+        <h3>Viajes a tu medida</h3>
+        <p>Diseñamos experiencias personalizadas según tus gustos y presupuesto.</p>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-hotel"></i>
+        <h3>Mejores hoteles</h3>
+        <p>Trabajamos con hoteles confiables y de alta calidad.</p>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-headset"></i>
+        <h3>Asesoría directa</h3>
+        <p>Un asesor te acompaña antes, durante y después de tu viaje.</p>
+      </div>
+    </div>
+
+    <a href="tel:+524428671851" class="btn">
+      <i class="fas fa-phone"></i> Hablar con un asesor
+    </a>
+
+    <div class="social">
+      <p>Síguenos en redes sociales</p>
+      <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Gisvin | Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
